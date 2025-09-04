@@ -1,29 +1,19 @@
 <!DOCTYPE html>
 <table border="1">
 <form action="#" method="post">
-  <h2>Encuesta rápida</h2>
+  <h2>Formulario de comentarios</h2>
 
-  <!-- Género -->
-  <p>Género:</p>
-  <input type="radio" id="masculino" name="genero" value="masculino">
-  <label for="masculino">Masculino</label><br>
+  <!-- Lista de países -->
+  <label for="pais">País:</label>
+  <select id="pais" name="pais">
+    <option value="bolivia">Bolivia</option>
+    <option value="argentina">Argentina</option>
+    <option value="mexico">México</option>
+  </select><br><br>
 
-  <input type="radio" id="femenino" name="genero" value="femenino">
-  <label for="femenino">Femenino</label><br>
+  <!-- Área de texto para comentarios -->
+  <label for="comentarios">Comentarios:</label><br>
+  <textarea id="comentarios" name="comentarios" rows="4" cols="50" placeholder="Escribe tu comentario aquí"></textarea><br><br>
 
-  <input type="radio" id="otro" name="genero" value="otro">
-  <label for="otro">Otro</label><br><br>
-
-  <!-- Hobbies -->
-  <p>Hobbies:</p>
-  <input type="checkbox" id="musica" name="hobby" value="musica">
-  <label for="musica">Música</label><br>
-
-  <input type="checkbox" id="deporte" name="hobby" value="deporte">
-  <label for="deporte">Deporte</label><br>
-
-  <input type="checkbox" id="lectura" name="hobby" value="lectura">
-  <label for="lectura">Lectura</label><br><br>
-
-  <input type="submit" value="Guardar">
+  <input type="submit" value="Enviar">
 </form>
