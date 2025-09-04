@@ -1,11 +1,29 @@
 <!DOCTYPE html>
 <table border="1">
-<form>
-  Nombre: <input type="text" name="nombre"><br><br>
-  
-  Correo: <input type="email" name="correo"><br><br>
-  
-  Contraseña: <input type="password" name="contraseña"><br><br>
-  
-  <input type="submit" value="Enviar">
+<form action="#" method="post">
+  <h2>Encuesta rápida</h2>
+
+  <!-- Género -->
+  <p>Género:</p>
+  <input type="radio" id="masculino" name="genero" value="masculino">
+  <label for="masculino">Masculino</label><br>
+
+  <input type="radio" id="femenino" name="genero" value="femenino">
+  <label for="femenino">Femenino</label><br>
+
+  <input type="radio" id="otro" name="genero" value="otro">
+  <label for="otro">Otro</label><br><br>
+
+  <!-- Hobbies -->
+  <p>Hobbies:</p>
+  <input type="checkbox" id="musica" name="hobby" value="musica">
+  <label for="musica">Música</label><br>
+
+  <input type="checkbox" id="deporte" name="hobby" value="deporte">
+  <label for="deporte">Deporte</label><br>
+
+  <input type="checkbox" id="lectura" name="hobby" value="lectura">
+  <label for="lectura">Lectura</label><br><br>
+
+  <input type="submit" value="Guardar">
 </form>
